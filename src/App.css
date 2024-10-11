@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unbounded:wght@200..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.header_hero_section {
+  background-image: linear-gradient(rgba(24, 43, 73, 0.228), rgb(24, 43, 73)),
+    url(./assets/images/hero.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+button {
+  font-size: 13px;
+  color: rgb(255, 255, 255) !important;
+  background: linear-gradient(
+    90deg,
+    rgb(17, 182, 122) 0%,
+    rgb(0, 148, 68) 100%
+  ) !important;
+  display: inline-block;
+  width: 110px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 11px;
+  border-radius: 0px 5px 5px 0px;
+  position: relative;
+}
+
+button:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(0, 148, 68) 0%,
+    rgb(17, 182, 122) 100%
+  );
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    90deg,
+    rgb(17, 182, 122) 0%,
+    rgb(0, 148, 68) 100%
+  );
+}
+
+p {
+  font-size: 16px;
+}
+
+h4 {
+  color: rgb(24, 43, 73);
+  line-height: 35px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+p {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  line-height: 28px;
+  font-size: 13px;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  font-size: 46px;
+  color: rgb(255, 255, 255);
+  max-width: 700px;
+  margin: auto auto 20px;
+  font-weight: 600;
+}
+
+.box {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+
+  transition: all ease-in 0.3s;
+}
+
+.box:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* .................... register form */
+
+.register-form {
+  /* background: url('assets/home/vd-bg.jpg'),rgb(0, 167, 106,0.9); */
+  background: linear-gradient(rgba(0, 167, 106, 0.9), rgba(0, 167, 106, 0.9)),
+    url("assets/home/vd-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Custom CSS for hexagon shape */
+.small-hexagon {
+  position: relative;
+  width: 33px;
+  height: 19px; /* Adjust height for correct proportions */
+  background-color: #4a90e2; /* Initial hexagon color */
+  margin: 10px 0; /* Adjust margin as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Transition for background color change */
+}
+
+.small-hexagon:hover {
+  background-color: #0e9b68; /* Change background color on hover */
+}
+
+.small-hexagon::before,
+.small-hexagon::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 16.5px solid transparent; /* Half of the width */
+  border-right: 16.5px solid transparent; /* Half of the width */
+}
+
+.small-hexagon::before {
+  bottom: 100%;
+  border-bottom: 9.5px solid #4a90e2; /* Half of the height */
+}
+
+.small-hexagon::after {
+  top: 100%;
+  border-top: 9.5px solid #4a90e2; /* Half of the height */
+}
+
+.small-hexagon:hover::before {
+  border-bottom-color: #0e9b68; /* Change top triangle color on hover */
+}
+
+.small-hexagon:hover::after {
+  border-top-color: #0e9b68; /* Change bottom triangle color on hover */
+}
