@@ -11,7 +11,7 @@ const Gallery = () => {
 
                 {GalleryItems.map((items, index) => (
                     <div key={index} className="overflow-hidden w-full">
-                        <img className="hover:opacity-75 hover:scale-125 transition-all duration-300" src={items.imge} alt='image' />
+                        <img className=" hover:scale-125 transition-all duration-300" src={items.imge} alt='image' />
 
                     </div>
                 ))}

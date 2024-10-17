@@ -23,22 +23,26 @@ const CarouselSize = () => {
   const [api, setApi] = useState(null);
   const cardData = [
     {
-      image: CardImage1, title: "Digital Marketing Course", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis error ut provident vel repellendus ",
+      image: CardImage1, title: "Digital Marketing Course", 
+      description: `covers key skills like SEO, social media, email marketing, and analytics. Learn how to create strategies that drive traffic and boost conversions, perfect for beginners and professionals alike.`,
       avator: avator,
       price: "$20"
     },
     {
-      image: CardImage2, title: "Zero to Hero in Python 3", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis error ut provident vel repellendus ",
+      image: CardImage2, title: "Basic Programming",
+       description: `introduces HTML, CSS, and JavaScript, teaching you how to build responsive websites from scratch. Perfect for beginners, it covers foundational coding skills to start your web development journey.`,
       avator: avator,
       price: "$30"
     },
     {
-      image: CardImage3, title: "PhP mySql programming", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis error ut provident vel repellendus ",
+      image: CardImage3, title: "Google Tools(9 dots)",
+       description: `explores essential Google apps like Drive, Docs, Sheets, and more from the 9-dot menu. Learn how to efficiently use these tools for productivity, collaboration, and organization in personal and professional tasks.`,
       avator: avator,
       price: "$13"
     },
     {
-      image: CardImage4, title: "Microsoft Excel for Beginner", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis error ut provident vel repellendus ",
+      image: CardImage4, title: "Microsoft Office Tools",
+       description: `covers essential applications like Word, Excel, PowerPoint, and Outlook. Learn to create documents, analyze data, and manage tasks efficiently, boosting productivity for both personal and professional use.`,
       avator: avator,
       price: "$12"
     },

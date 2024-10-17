@@ -4,6 +4,7 @@ import { IoMdMenu } from "react-icons/io";
 
 import { useState } from "react";
 import { RxCross1 } from "react-icons/rx";
+import portfolio from "../assets/history.pdf";
 
 // import logo from "/assets/logo.svg"
 function Navbar() {
@@ -12,7 +13,7 @@ function Navbar() {
     {
       id: 1,
       text: "Home",
-      linkto: "#",
+      linkto: "/",
     },
     {
       id: 2,
@@ -65,8 +66,9 @@ function Navbar() {
                   </a>
                 );
               })}
-
-              <button>Sign Up Now</button>
+              <a href={portfolio} target="_blank">
+                <button>Portfollio</button>
+              </a>
             </div>
           </div>
         </div>
@@ -84,7 +86,9 @@ function Navbar() {
                   </a>
                 );
               })}
-              <button>Sign Up Now</button>
+              <a href={portfolio} target="_blank">
+                <button>Portfollio</button>
+              </a>
             </div>
           </div>
         </div>

@@ -1,33 +1,17 @@
 import "./App.css";
-import Navbar from "./Layouts/Navbar";
-import {
-  Achievements,
-  BlogArticle,
-  CarouselSlider,
-  Experienced,
-  Feautured,
-  Gallery,
-  Header,
-  SignupForm,
-  Team,
-} from "./Components";
-import Footer from "./Layouts/Footer";
+import { Home, Seniors, Juniors, NorthTech } from "./pages/index";
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Header />
-      <Feautured />
-      <Experienced />
-      <CarouselSlider />
-      <Achievements />
-      <SignupForm />
-      <Team />
-      <BlogArticle />
-      <Gallery />
-      <Footer />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/seniors" element={<Seniors />} />
+        <Route path="/juniors" element={<Juniors />} />
+        <Route path="/northtech" element={<NorthTech />} />
+      </Routes>
+    </>
   );
 };
 

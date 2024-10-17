@@ -1,5 +1,4 @@
 export { default as Header } from "./Header";
-export { default as Feautured } from "./Feautured";
 export {default as Experienced } from "./Experienced";
 export { default as CarouselSlider } from "./CarouselSlider";
 export { default as Achievements } from "./Achievements";
